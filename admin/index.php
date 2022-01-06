@@ -1,150 +1,151 @@
-
-<!DOCTYPE HTML>
-<html>
-<head>
-  <title>Sign In</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel='stylesheet' type='text/css' />
-  <!-- Graph CSS -->
-  <link href="css/font-awesome.css" rel="stylesheet"> 
-  <!-- jQuery -->
-  <!-- lined-icons -->
-  <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
-  <!-- //lined-icons -->
-  <!-- chart -->
-  <script src="js/Chart.js"></script>
-  <!-- //chart -->
-  <!--animate-->
-  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <!--//end-animate-->
-    <!----webfonts--->
-    <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    <!---//webfonts---> 
-    <!-- Meters graphs -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <!-- Placed js at the end of the document so the pages load faster -->
-
-  </head> 
-
-  <body class="sign-in-up">
-    <section>
-      <div id="page-wrapper" class="sign-in-wrapper">
-        <div class="graphs">
-          <div class="sign-in-form">
-            <div class="sign-in-form-top">
-              <p><span>Sign In</span> </p>
-            </div>
-            <div class="signin">
-              
-              <form action="" method="post">
-                <div class="log-input">
-                  <div class="log-input-left">
-                    <input type="text" class="user" name="email" placeholder="Enter your email" required=""/>
-                  </div>
-
-                  <div class="clearfix"> </div>
-                </div>
-                <div class="log-input">
-                  <div class="log-input-left">
-                    <input type="password" class="lock" name="password" placeholder="Enter your password" required=""/>
-                  </div>
-
-                  <div class="clearfix"> </div>
-                </div>
-          
-                <div class="log-input">
-                 <div class="log-input-left">
-                  <select class="form-control" name="type" required="">
-                  <option value="admin">Admin</option>
-                    <option value="user">User</option>
-                    <option value="delivery">Delivery Person</option>
-                  </select>
-                  </div>
-
-                  </div>
-                  <div class="clearfix"> </div>
-                
-                <input type="submit" value="Login" name="submit">
-                              <div class="signin-rit">
-
-                <p><a href="change password.php">Forgot Password?</a> </p>
-                <div class="clearfix"> </div>
-              </div>
-              </form>	
-              <!--  -->
-            </div>
-            <div class="new_people">
-
-              <a href="register.php">Register Now!</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-  </html>
-
 <?php
-session_start();
+include('header.php');
+?>  
+        <div class="section-admin container-fluid res-mg-t-15">
+            <div class="row admin text-center">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 50px;">
+                            <div class="admin-content analysis-progrebar-ctn">
+                                <h4 class="text-left text-uppercase"><b>Branches</b></h4>
+                                <div class="row vertical-center-box vertical-center-box-tablet">
+                                    <div class="col-xs-12 cus-gh-hd-pro">
+                                        <h2 class="text-right no-margin">20</h2>
+                                    </div>
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 20%;" class="progress-bar bg-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-bottom:50px;">
+                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                                <h4 class="text-left text-uppercase"><b>Collected</b></h4>
+                                <div class="row vertical-center-box vertical-center-box-tablet">
+                                    <div class="col-xs-12 cus-gh-hd-pro">
+                                        <h2 class="text-right no-margin">500</h2>
+                                    </div>
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 50%;" class="progress-bar progress-bar-danger bg-red"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                                <h4 class="text-left text-uppercase"><b>In-Transit</b></h4>
+                                <div class="row vertical-center-box vertical-center-box-tablet">
+                                    <div class="col-xs-12 cus-gh-hd-pro">
+                                        <h2 class="text-right no-margin">350</h2>
+                                    </div>
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 35%;" class="progress-bar bg-blue"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="admin-content analysis-progrebar-ctn res-mg-t-30">
+                                <h4 class="text-left text-uppercase"><b>Delivered</b></h4>
+                                <div class="row vertical-center-box vertical-center-box-tablet">
+                                   <div class="col-xs-12 cus-gh-hd-pro">
+                                        <h2 class="text-right no-margin">700</h2>
+                                    </div>
+                                </div>
+                                <div class="progress progress-mini">
+                                    <div style="width: 70%;" class="progress-bar bg-purple"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="product-sales-area mg-tb-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="product-sales-chart">
+                            <div class="portlet-title">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="caption pro-sl-hd">
+                                            <span class="caption-subject text-uppercase"><b>Sales</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="curved-line-chart" class="flot-chart-sts flot-chart curved-chart-statistic"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
 
+        <div class="footer-copyright-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-$email    = "";
-$errors = array(); 
+    <!-- jquery
+		============================================ -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap JS
+		============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- wow JS
+		============================================ -->
+    <script src="js/wow.min.js"></script>
+    <!-- price-slider JS
+		============================================ -->
+    <script src="js/jquery-price-slider.js"></script>
+    <!-- meanmenu JS
+		============================================ -->
+    <script src="js/jquery.meanmenu.js"></script>
+    <!-- owl.carousel JS
+		============================================ -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- sticky JS
+		============================================ -->
+    <script src="js/jquery.sticky.js"></script>
+    <!-- scrollUp JS
+		============================================ -->
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <!-- mCustomScrollbar JS
+		============================================ -->
+    <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/scrollbar/mCustomScrollbar-active.js"></script>
+    <!-- metisMenu JS
+		============================================ -->
+    <script src="js/metisMenu/metisMenu.min.js"></script>
+    <script src="js/metisMenu/metisMenu-active.js"></script>
+    <!-- sparkline JS
+		============================================ -->
+    <script src="js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="js/sparkline/jquery.charts-sparkline.js"></script>
+    <!-- calendar JS
+		============================================ -->
+    <script src="js/calendar/moment.min.js"></script>
+    <script src="js/calendar/fullcalendar.min.js"></script>
+    <script src="js/calendar/fullcalendar-active.js"></script>
+	<!-- float JS
+		============================================ -->
+    <script src="js/flot/jquery.flot.js"></script>
+    <script src="js/flot/jquery.flot.resize.js"></script>
+    <script src="js/flot/curvedLines.js"></script>
+    <script src="js/flot/flot-active.js"></script>
+    <!-- plugins JS
+		============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+		============================================ -->
+    <script src="js/main.js"></script>
+</body>
 
-// connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'cms');
-
-
-if (isset($_POST['submit'])) {
-  $email = mysqli_real_escape_string($db, $_POST['email']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
-  $type = mysqli_real_escape_string($db, $_POST['type']);
-
-  if($type==='admin')
-     {
-      $res=mysqli_query($db,"SELECT * FROM `admin` WHERE email='$email' And password='$password'");
-      
-
-    }
-
-    if($type==='user')
-    {
-       $res=mysqli_query($db,"SELECT * FROM `user` WHERE email='$email' And password='$password'");
-
-    }
-       if($type==='delivery')
-    {
-       $res=mysqli_query($db,"SELECT * FROM `delivery` WHERE email='$email' And password='$password'");
-
-    }
-
-  if (count($errors) == 0) {
-    $password = md5($password);
-    $query = "SELECT * FROM admin WHERE email='$email' AND password='$password' AND type='$type'";
-    $results = mysqli_query($db, $query);
-    if (mysqli_num_rows($results) == 1) {
-      $_SESSION['email'] = $email;
-      $_SESSION['success'] = "You are now logged in";
-      header('location: Dashboard/index.php');
-    }else {
-      array_push($errors, "Wrong email/password combination");
-    }
-  }
-}
-
-?>
-
+</html>
